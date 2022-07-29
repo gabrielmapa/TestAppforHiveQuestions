@@ -1,81 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/background_8"
-    tools:context=".QuestionNumber1">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_8"
+        tools:context=".QuestionNumber1">
 
-    <TextView
-        android:id="@+id/textScreen"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center"
-        android:textColor="#000000"
-        android:textSize="22sp"
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Honey Guessr" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="false"
+        android:layout_marginStart="22dp">
 
-    <LinearLayout
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        android:background="@drawable/text_background"
-        android:orientation="vertical"
-        android:layout_width="290dp"
-        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textQuestion"
-            android:layout_width="270dp"
-            android:layout_height="91dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:lineSpacingExtra="6dp"
-            android:text="Ano ang tawag sa ‘money currency’ ng Pilipinas?"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="Honey Guessr"
+                android:textColor="#d3a10c"
+                android:textSize="22dp" />
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/alam1"
+                android:layout_width="306dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_background"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Sa larangan ng Sining at Kultura, ALAM MO BA?"
+                android:textColor="#000000"
+                android:textSize="19dp"
+                android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="306dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/text_background"
-        android:clickable="false"
-        android:focusable="false"
-        android:gravity="center"
-        android:padding="10dp"
-        android:textColor="#000000"
-        android:textSize="22sp" />
-    
-    <TextView
-        android:id="@+id/textTitle"
-        android:text="Pagpipilian:"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        android:layout_marginRight="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        />
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="268dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
 
-    <TableLayout
-        android:id="@+id/layoutParent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:orientation="horizontal">
-    </TableLayout>
+                <TextView
+                    android:id="@+id/trivia1"
+                    android:layout_width="327dp"
+                    android:layout_height="208dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Bago ang taong 1967, ang mga perang papel at tanso sa Pilipinas ay tinawag ng “Peso” mula sa lenggwaheng Ingles. Kinalaunan, nang magamit na ito ng mga Pilipino ay naging “Piso” ang bigkas dito."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="387dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trivia2"
+                    android:layout_width="350dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Ang “Batok” ay pinaniniwalaang tradisyon na isang libong taon nang isinasagawa na nagmula sa tribo ng mga mandirigmang Kalinga. Ito ay upang ipakita ang kanilang katapangan at nagsisilbi rin itong representasyon ng mga napagtagumpayan nilang digmaan.
+    Pinaniniwalaang si Apo Whang-Od ay ang huling natitirang Mambabatok mula sa tribo ng Kalinga."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="499dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trivia3"
+                    android:layout_width="345dp"
+                    android:layout_height="450dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Ipinagdiriwang sa Bacolod ang Pista ng MassKara. Ang salitang “Mass” ay nangangahulugang “madami”, at ang “Kara” naman ay nangangahulugang “muka”. Kaya’t ang literal na salin sa MassKara ay “maraming muka”.
+    Ang pistang ito ay upang gunitain ang panahon ng tag-gutom at kahirapan noong 1980 sa Bacolod. Noong panahon na iyon din naganap ang paglubog ng isang ferry o sasakyang pantubig na nagdulot ng pagkamatay ng mga sakay nito. Para mapagaan ang sitwasyon sa kanilang lungsod ay isinagawa nila ang pistang ito."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/alam2"
+                android:layout_width="306dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_background"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Sa larangan ng Kasaysayan, ALAM MO BA?"
+                android:textColor="#000000"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trivia4"
+                    android:layout_width="327dp"
+                    android:layout_height="167dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Noong 1565, sa misyon na sakupin ang Manila sa pangunguna ni Miguel Lopez de Legazpi ay sinakop ang bansang Pilipinas ng mga Espanyol sa loob ng 333 taon."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="249dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trivia5"
+                    android:layout_width="350dp"
+                    android:layout_height="2100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Sumisimbolo ang walong (8) sinag ng araw sa pambansang watawat ng Pilipinas sa mga probinsya na lumaban sa mga Espanyol sa kanilang pananakop. Ito ay ang Maynila, Cavite, Bulacan, Pampanga, Nueva Ecija, Laguna at Batangas."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="317dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trivia6"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Si Teofilo Yldefonso ang unang nagkamit ng Olympic medal para sa Pilipinas. Siya ay lumaban sa 200m breaststroke noong 1928 at nanalo ng tansong medalya. Muli siyang nagkamit ng isa pang bronze sa parehas na kategorya noong 1932 sa Olympics na ginanap sa Los Angeles, USA."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/alam3"
+                android:layout_width="306dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_background"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Sa larangan ng Pangkalahatang Kaalaman, ALAM MO BA?"
+                android:textColor="#000000"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="249dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trivia7"
+                    android:layout_width="350dp"
+                    android:layout_height="205dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Ang Pilipinas ay sinasabing mayroong 7,107 na mga pulo kung saan 2,000 dito ang pinanahanan. Subalit, noong Marso 2017, napabalita na nadagdagan na ang bilang nito at umabot na sa 7, 641 ang bilang ng mga pulo."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="249dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trivia8"
+                    android:layout_width="350dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Cebu ang pinakamatandang lungsod at ang unang kabisera ng Pilipinas. Dito rin unang namalagi ang mga Espanyol na sumakop sa ating bansa. Opisyal itong naging lungsod noong ika-27 ng Abril, 1954."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="372dp"
+                android:layout_height="343dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trivia9"
+                    android:layout_width="350dp"
+                    android:layout_height="330dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Dalawang-daan ang bulkan na matatagpuan sa Pilipinas at ang dalawampu’t apat sa mga ito ay aktibo. Matatawag na aktibo ang isang bulkan kung ito ay sumabog sa loob ng huling 10, 000 na taon kagaya ng Mt. Mayon, Mt. Bulusan, Mt. Hibok-hibok, Mt. Didicas, Mt. Pinatubo, Mt. Mayon at marami pang iba."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="306dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/text_background"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Binabati kita!"
+                android:textColor="#000000"
+                android:textSize="22dp" />
+
+            <TableLayout
+                android:id="@+id/layoutParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"></TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
